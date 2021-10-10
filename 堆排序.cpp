@@ -42,3 +42,15 @@ public:
         }
     }
 };
+
+int main(){
+    heap h;
+    int tree[] = {5,6,1,8,3};
+    int len = 5;
+    h.heapify(tree, len, 0);
+    h.build_heap(tree, len);
+    h.heap_sort(tree, len);
+    for(int i = 0;i < 5;i++){
+        std::cout<<tree[i]<<" ";
+    }
+}
